@@ -1,0 +1,31 @@
+body{
+    background-color: blanchedalmond;
+}
+
+.grid-style{
+    background-color: rgba(222, 137, 122, 0.522);
+    align-content:flex-start ;
+}
+
+.grid-view{
+    background-color: rgba(222, 137, 122, 0.522);
+    border: none;
+    display: grid;
+    width: max-content;
+    grid-template-columns: 150px;
+    grid-gap: 20px;
+    align-content:flex-start ;
+    padding: 10px;
+    position: relative;
+    text-align: center;
+}
+
+.grid-view a{
+    background-color: rgba(213, 171, 86, 0.828);
+}
+
+.buttom-nav{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
