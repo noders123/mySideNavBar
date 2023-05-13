@@ -1,31 +1,103 @@
-body{
-    background-color: blanchedalmond;
-}
-
-.grid-style{
-    background-color: rgba(222, 137, 122, 0.522);
-    align-content:flex-start ;
-}
-
-.grid-view{
-    background-color: rgba(222, 137, 122, 0.522);
+*{
+    margin: 0;
+    padding: 0;
+    outline: none;
     border: none;
-    display: grid;
-    width: max-content;
-    grid-template-columns: 150px;
-    grid-gap: 20px;
-    align-content:flex-start ;
+    /* text-decoration: none; */
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body{
+    background: #dfe9f5;
+}
+
+.nav-bar{
+    list-style: none;
+    position: absolute;
+    padding-right: 0.5em;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 4em;
+    height: 100%;
+    background-color: rgb(255,255,255);
+    overflow:hidden; /* sets the desired behavior when content does not fit in the parent element box (overflows) in the horizontal and/or vertical direction */
+    box-shadow: 0 20px 35 rgba(0,0,0, 0.1);
+    transition: all 0.35s linear;
+}
+
+.nav-bar:hover{
+    transition: all 0.16s linear;
+    width: 10em;
+}
+
+
+.portal-logo{
+    display: flex;
+    text-align: center;
+    transition: all 0.5s ease; /* CSS transitions allows you to change property values smoothly, over a given duration. */
+    margin-bottom: 2em;
+}
+
+.portal-logo img{
+    width: 3.5em;
+    border-radius: 12%; 
+}
+
+.portal-logo span{
+    display: flex;
     padding: 10px;
-    position: relative;
     text-align: center;
 }
 
-.grid-view a{
-    background-color: rgba(213, 171, 86, 0.829);
+.nav-bar .li-options:hover{
+    opacity: 0.6;
+    cursor: pointer;
 }
 
-.buttom-nav{
+.nav-bar .li-options:active{
+    opacity: 0.25;
+    cursor: pointer;
+}
+
+
+.menu-icons{
+    display: flex;
+    align-content: center;
+    border: 1px black;
+    margin-bottom: 1em  ;
+}
+
+
+.menu-icons img{
+    width: 20px;
+    height: 20px;
+    margin-right: 2em;
+    margin-left: 1em;
+    margin-bottom: 1.5em;
+}
+
+.menu-icons span{
+    text-align: start;
+    font-size: 1em;
+}
+
+.nav-list{
+    list-style: none;
+}
+
+.nav-bar .buttom-nav-item{
     position: absolute;
     bottom: 0;
-    left: 0;
+}
+
+.nav-bar .buttom-nav-item:hover{
+    opacity: 0.6;
+    cursor: pointer;
+}
+
+.nav-bar .buttom-nav-item:active{
+    opacity: 0.25;
+    cursor: pointer;
 }
